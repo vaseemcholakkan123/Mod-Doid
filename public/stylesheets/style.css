@@ -1,0 +1,24 @@
+body {
+ background-color: #3F4E4F;
+}
+
+.card-img-top{
+  
+  align-items: center;
+  width:200px;
+  height: 150px;
+}
+.card{
+  border-radius: 8px;
+  width: 12rem; height:7 rem; align-items: center;
+  cursor: pointer;
+}
+.card:hover{
+  border: 1px solid;
+ 
+ 
+  border-radius: 15px;
+}
+.btn:hover{
+  border-radius: 0px;
+}

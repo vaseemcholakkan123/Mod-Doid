@@ -1,0 +1,79 @@
+
+<div class="container pt-2" id="appsDiv">
+    {{#if apps}}
+      <h1 class="mt-5" style="text-align:center ; color: aliceblue;">Apps</h1>
+      {{/if}}
+    <div class="row me-2">
+        
+      
+
+
+        {{#each apps}}
+        <div class="col-md-4 col-lg-2 col-6 mt-4" style="text-align: center; padding-left:14px;">
+
+            <div class="card" >
+                 <img src="{{this.imagelink}}" class=" mt-2 rounded-circle" alt="..." width="100px" height="90px">
+                     <div class="card-body">
+                          <h5 class="card-title">{{this.appname}}</h5>
+                              <p class="card-text">{{this.description}}</p>
+                                 <a href="{{this.downloadlink}}" class="btn btn-primary">Download now</a>
+                     </div>   
+            </div>     
+       </div>
+       {{/each}}
+      
+
+    </div>
+    {{#if games}}
+      <h1 id="gamesDiv" class=" mt-2" style="text-align:center ; color: aliceblue;">Games</h1>
+    {{/if}}
+    <div class="row pb-2 me-2">
+        
+      
+
+        
+        {{#each games}}
+        <div class="col-md-4 col-lg-2 col-6 mt-4" style="padding-left:14px; text-align: center;">
+
+            <div class="card" >
+                 <img src="{{this.imagelink}}" class=" mt-2 rounded-circle" alt="..." width="100px" height="90px">
+                     <div class="card-body">
+                          <h5 class="card-title">{{this.appname}}</h5>
+                              <p class="card-text">{{this.description}}</p>
+                                 <a href="{{this.downloadlink}}" class="btn btn-primary">Download now</a>
+                     </div>   
+            </div>     
+       </div>
+       {{/each}}
+      
+
+    </div>
+
+        {{#if paid_apps}}
+     <h1 id="paidappsDiv" class=" mt-2" style="text-align:center ; color: aliceblue;">Paid Apps</h1>
+        {{/if}}
+    <div class="row pb-5 me-2">
+        
+      
+
+        
+        {{#each paid_apps}}
+        <div  class="col-md-4 col-lg-2 col-6 mt-4" style="padding-left:14px; text-align: center;">
+
+            <div class="card" >
+                 <img src="{{this.imagelink}}" class=" mt-2 rounded-circle" alt="..." width="100px" height="90px">
+                     <div class="card-body">
+                          <h5 class="card-title">{{this.appname}}</h5>
+                              <p class="card-text">{{this.description}}</p>
+                                 <a href="{{this.downloadlink}}" class="btn btn-primary">Download for $0.99</a>
+                     </div>   
+            </div>     
+       </div>
+       {{/each}}
+      
+
+    </div>
+
+
+
+</div>
